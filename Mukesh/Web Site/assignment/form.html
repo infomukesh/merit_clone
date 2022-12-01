@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <form action="Submitted data.html" method="post" target="_blank">
+
+        <!-- For Citizen Registration Form -->
+        <fieldset>
+
+            <legend style="color: #D66500;"><big>C</big>itizen <big>R</big>egistration <big>F</big>orm</legend>
+
+            <br>
+
+            <label>Aadhaar Card : </label>
+            <input type="text" name="adhaarCard" required maxlength="12">
+
+            <br><br>
+
+            <label>Name of the Applicant<br>
+                (as per Identity Document): </label>
+            <input type="text" name="name" required>
+
+            <br><br>
+            
+            <label>Gender<br>
+                (as per Identity Document): </label>
+                <select name="gender" id="gender" required>
+                    <option value="null">--Select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+            <br><br>
+
+            <label>Father Name<br>
+                (as per Identity Document): </label>
+            <input type="text" name="fatherName" required>
+
+            <br><br>
+
+            <label>Mother Name<br>
+                (as per Identity Document): </label>
+            <input type="text" name="motherName" required>
+
+            <br><br>
+
+            <label>Spouse Name: </label>
+            <input type="text" name="spouseName">
+
+            <br><br>
+
+            <label>Date of Birth<br>
+                (as per Identity Document): </label>
+            <input type="date" name="dateOfBirth" required>
+
+        </fieldset>
+
+        <br><br>
+
+        <!-- For Present Residential Address -->
+        <fieldset>
+
+            <br>
+
+            <legend style="color: red;"><big>P</big>resent <big>R</big>esidential <big>A</big>ddress</legend>
+
+             <label>House No. </label>
+             <input type="text" name="houseNo" required>
+
+             <br><br>
+
+             <label>Street Name/No. </label>
+             <input type="text" name="streetName">
+
+             <br><br>
+
+             <label>Sub Locality </label>
+             <input type="text" name="subLocality">
+
+             <br><br>
+
+             <label>Whether Residing in Delhi or Other State? </label>
+             <input type="radio" name="state" value="delhi" required>Delhi
+             <input type="radio" name="state" value="otherState" required>Other State
+
+             <br><br>
+
+             <label>Residential Locality </label>
+                <select name="select" id="select" required>
+                    <option value="null">--Select--</option>
+                    <option value="sangamVihar">Sangam Vihar</option>
+                    <option value="khanpur">Khanpur</option>
+                    <option value="saket">Saket</option>
+                </select>
+
+                <br><br>
+
+                <label>Sub Division </label>
+                <input type="text" name="subDivision" value="Saket" readonly>
+
+                <br><br>
+
+                <label>District </label>
+                <input type="text" name="district" value="South" readonly>
+
+                <br><br>
+
+                <label>State </label>
+                <input type="text" name="district" value="Delhi" readonly>
+
+                <br><br>
+
+                <label>Country </label>
+                <input type="text" name="country" value="India" readonly>
+
+                <br><br>
+
+                <label>Pincode: </label>
+                <input type="pin" name="pincode" pattern="[0-9]{6}" maxlength="6" size="4">
+
+                <br><br>
+
+                <label>Permanent Address is Same? </label>
+                <input type="radio" name="address" value="yes" required>Yes
+                <input type="radio" name="address" value="no" required>No
+
+                <br><br>
+
+                <label>Permanent Address </label>
+                <textarea required></textarea>
+
+                <br><br>
+
+                <label>Email </label>
+                <input type="email" name="email"> (Access credentials will be sent on this)
+                
+                <br><br>
+
+                <label>Mobile No. </label>
+                <input type="tel" name="telephoneNo" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required maxlength="10"> (Access credentials will be sent on this)
+
+                <br><br>
+
+                <input type="file" name="file" required>
+                
+                <br><br>
+
+                <input type="checkbox" name="termsAndCondition" required>I accept the <a href="terms&condtions.html" target="_blank">Terms & Conditions</a>
+
+                <br><br>
+
+                <input type="submit" value="Continue to Registration">
+                <input type="reset" value="Cancel">      
+     
+    </form>
+</body>
+</html>
